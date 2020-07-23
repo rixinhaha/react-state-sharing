@@ -2,6 +2,15 @@
 
 Link to slides: https://docs.google.com/presentation/d/1-wzHDakVsRKzFGAj_AmRj86fN-MS9-Ad_tFtxDGNNVY/edit?usp=sharing
 
+This sharing will briefly introduce the following topics:
+
+- Refresher on state
+- Reconciliation algorithm
+- Misconceptions of setState
+- React Hooks internals
+- Problems with our code
+- Global state
+
 **If we update the variable we passed to the state, does the state in react get changed?**
 
 - If we update the directly in react without using setState call, the state in react will be changed. However, this will eventually introduce bugs in the rendering of the updated UI (esp if we have pure components that will not always update).
