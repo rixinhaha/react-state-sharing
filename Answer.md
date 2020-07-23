@@ -19,7 +19,7 @@ This sharing will briefly introduce the following topics:
 
 - https://blog.logrocket.com/simplifying-state-management-in-react-apps-with-batched-updates/
 
-**When I use await, does it mean the batching of render is not done.**
+**When I use await, does it mean the batching of render is not done?**
 e.g. "So this will cause 1 or 2 renders? const a = await apiCall(); setItem(a); setItem2(a);"
 
 - Behavior is verified for the below example. On component did mount (useEffect with empty dependency array), there are 2 setState calls made and there are 2 renders in this case, one after setCount and one after setData.
